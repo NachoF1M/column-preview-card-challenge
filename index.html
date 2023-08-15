@@ -24,6 +24,8 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+   
+   
 
     .card {
       display: flex;
@@ -34,7 +36,7 @@
       width: auto;
       width: 850px;
       margin: 0 auto;
-      
+
     }
 
     .column1,
@@ -101,69 +103,76 @@
     .button-learn-more3 {
       color: #00403f;
     }
+
     .button-learn-more1:hover {
-    background-color: #e28525; 
-    color: white;
-    border: 2px solid white;
-    }
-    .button-learn-more2:hover {
-    background-color: #016972; 
-    color: white;
-    border: 2px solid white;
-    }
-    .button-learn-more3:hover {
-    background-color: #00403f; 
-    color: white;
-    border: 2px solid white;
-    }
-    @media (max-width: 768px) {
-  
-    .card {
-      flex-direction: column;
-      align-items: center;
-      width:auto ;
-      margin: 10vw;
-      
+      background-color: #e28525;
+      color: white;
+      border: 2px solid white;
     }
 
-    .column1,
-    .column2,
-    .column3 {
-      padding: 40px;
-      text-align: center;
-      max-width: 300px;
+    .button-learn-more2:hover {
+      background-color: #016972;
+      color: white;
+      border: 2px solid white;
     }
-  }
+
+    .button-learn-more3:hover {
+      background-color: #00403f;
+      color: white;
+      border: 2px solid white;
+    }
+
+    @media (max-width: 768px) {
+
+      .card {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        margin: 10vw;
+       border-radius: 5px;
+      }
+
+      .column1,
+      .column2,
+      .column3 {
+        
+        padding: 40px;
+        text-align: center;
+        max-width: 300px;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div class="card">
-
-    <div class="column1">
-      <img src="images/icon-sedans.svg" class="img-car">
-      <h2 class="primary-text">SEDANS</h2>
-      <p class="secondary-text">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in
-        the city or on your next road trip.</p>
-      <button class="secondary-text button-learn-more1">Learn more</button>
-    </div>
-    <div class="column2">
-      <img src="images/icon-suvs.svg" class="img-car">
-      <h2 class="primary-text">SUVS</h2>
-      <p class="secondary-text">Take an SUV for its spacious interior, power and versatility. Perfect for your next
-        family vacation and off-road adventures.</p>
-      <button class="secondary-text button-learn-more2">Learn more</button>
-    </div>
-    <div class="column3">
-      <img src="images/icon-luxury.svg" class="img-car">
-      <h2 class="primary-text">LUXURY</h2>
-      <p class="secondary-text">Cruise in the best car brands without the bloated prices. Enjoy the enhanced confort of
-        a luxury rental and arrive in style.</p>
-      <button class="secondary-text button-learn-more3">Learn more</button>
-    </div>
-  </div>
-
   
+    <div class="card">
+
+      <div class="column1">
+        <img src="images/icon-sedans.svg" class="img-car">
+        <h2 class="primary-text">SEDANS</h2>
+        <p class="secondary-text">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in
+          the city or on your next road trip.</p>
+        <button class="secondary-text button-learn-more1">Learn more</button>
+      </div>
+      <div class="column2">
+        <img src="images/icon-suvs.svg" class="img-car">
+        <h2 class="primary-text">SUVS</h2>
+        <p class="secondary-text">Take an SUV for its spacious interior, power and versatility. Perfect for your next
+          family vacation and off-road adventures.</p>
+        <button class="secondary-text button-learn-more2">Learn more</button>
+      </div>
+      <div class="column3">
+        <img src="images/icon-luxury.svg" class="img-car">
+        <h2 class="primary-text">LUXURY</h2>
+        <p class="secondary-text">Cruise in the best car brands without the bloated prices. Enjoy the enhanced confort
+          of
+          a luxury rental and arrive in style.</p>
+        <button class="secondary-text button-learn-more3">Learn more</button>
+      </div>
+    </div>
+  
+
 </body>
 
 </html>
