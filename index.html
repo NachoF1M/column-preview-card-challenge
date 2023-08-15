@@ -1,23 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | 3-column preview card component</title>
 
   <!-- aqui va tus CSS 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>color: hsl(228, 45%, 44%); }
-</head>
-<body>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300&display=swap');
+
+
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .card {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      border-radius: 5px;
+      overflow: hidden;
+      width: auto;
+      width: 850px;
+      margin: 0 auto;
+      
+    }
+
+    .column1,
+    .column2,
+    .column3 {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      text-align: left;
+
+    }
+
+    .column1 {
+      background-color: #e28525;
+    }
+
+    .column2 {
+      background-color: #016972;
+    }
+
+    .column3 {
+      background-color: #00403f;
+    }
+
+    .primary-text {
+
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-size: 40px;
+    }
+
+    .secondary-text {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    .img-car {
+      width: 50px;
+    }
+
+    .button-learn-more1,
+    .button-learn-more2,
+    .button-learn-more3 {
+      background-color: white;
+      height: 40px;
+      border-radius: 40px;
+      width: 140px;
+
+      border: none;
+      margin-top: 50px;
+      cursor: pointer;
+    }
+
+    .button-learn-more1 {
+      color: #e28525;
+    }
+
+    .button-learn-more2 {
+      color: #016972;
+    }
+
+    .button-learn-more3 {
+      color: #00403f;
+    }
+    .button-learn-more1:hover {
+    background-color: #e28525; 
+    color: white;
+    border: 2px solid white;
+    }
+    .button-learn-more2:hover {
+    background-color: #016972; 
+    color: white;
+    border: 2px solid white;
+    }
+    .button-learn-more3:hover {
+    background-color: #00403f; 
+    color: white;
+    border: 2px solid white;
+    }
+    @media (max-width: 768px) {
   
-  <div class="attribution">
-    Autor del ejercicio <a href="#">Tu nombre aquí</a>.
+    .card {
+      flex-direction: column;
+      align-items: center;
+      width:auto ;
+      margin: 10vw;
+      
+    }
+
+    .column1,
+    .column2,
+    .column3 {
+      padding: 40px;
+      text-align: center;
+      max-width: 300px;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+
+    <div class="column1">
+      <img src="images/icon-sedans.svg" class="img-car">
+      <h2 class="primary-text">SEDANS</h2>
+      <p class="secondary-text">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in
+        the city or on your next road trip.</p>
+      <button class="secondary-text button-learn-more1">Learn more</button>
+    </div>
+    <div class="column2">
+      <img src="images/icon-suvs.svg" class="img-car">
+      <h2 class="primary-text">SUVS</h2>
+      <p class="secondary-text">Take an SUV for its spacious interior, power and versatility. Perfect for your next
+        family vacation and off-road adventures.</p>
+      <button class="secondary-text button-learn-more2">Learn more</button>
+    </div>
+    <div class="column3">
+      <img src="images/icon-luxury.svg" class="img-car">
+      <h2 class="primary-text">LUXURY</h2>
+      <p class="secondary-text">Cruise in the best car brands without the bloated prices. Enjoy the enhanced confort of
+        a luxury rental and arrive in style.</p>
+      <button class="secondary-text button-learn-more3">Learn more</button>
+    </div>
   </div>
+
+  
 </body>
+
 </html>
